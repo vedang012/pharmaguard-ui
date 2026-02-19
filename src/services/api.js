@@ -139,7 +139,7 @@ export async function analyzeVcf(file, drug) {
     // Mock mode — return sample data when no backend is configured
     if (USE_MOCK) {
         await new Promise((r) => setTimeout(r, 1200)); // simulate latency
-        return { data: sampleResponse };
+        return { data: normalizeAnalysisResponse(sampleResponse) };
     }
 
     const formData = new FormData();

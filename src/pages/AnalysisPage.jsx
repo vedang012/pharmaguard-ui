@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { analyzeVcf } from '../services/api';
 import {
-    ArrowLeft, Code, FileBarChart, Sparkles, ShieldCheck
+    ArrowLeft, Code, Sparkles, ShieldCheck
 } from 'lucide-react';
 import UploadCard from '../components/UploadCard';
 import DrugInput from '../components/DrugInput';

@@ -69,7 +69,6 @@ function Footer() {
                         {[
                             { to: '/analyze', label: 'Analysis' },
                             { to: '/docs', label: 'Documentation' },
-                            { to: '/developer', label: 'Developer API' },
                         ].map(({ to, label }) => (
                             <Link
                                 key={to}

@@ -1,12 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { Shield, FlaskConical, FileText, Code2, Menu, X, Sun, Moon } from 'lucide-react';
+import { Shield, FlaskConical, FileText, Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../ThemeContext';
 
 const links = [
     { to: '/analyze', label: 'Analysis', icon: FlaskConical },
     { to: '/docs', label: 'Documentation', icon: FileText },
-    { to: '/developer', label: 'Developer', icon: Code2 },
 ];
 
 function Navbar() {
