@@ -137,13 +137,13 @@ function AnalysisPage() {
                         </div>
 
                         <ExplanationPanel explanations={result.explanations} />
-                        <JsonViewer data={result} visible={showJson} />
+                        <JsonViewer data={result.rawRecords} visible={showJson} />
 
                         <div
                             className="flex justify-between items-center"
                             style={{ paddingTop: 'var(--space-xl)', borderTop: '1px solid var(--color-border)' }}
                         >
-                            <DownloadButtons data={result} analysisId={result.analysisId} />
+                            <DownloadButtons data={result.rawRecords} analysisId={result.analysisId} />
                         </div>
                     </div>
                 )}
